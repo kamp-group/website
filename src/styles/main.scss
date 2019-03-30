@@ -1,0 +1,11 @@
+@import 'variables';
+
+.header {
+  h1 {
+    a {
+      color: $black;
+      text-transform: lowercase;
+      letter-spacing: 5px;
+    }
+  }
+}

@@ -2,7 +2,7 @@ import React from 'react'
 import Link from 'gatsby-link'
 
 const Header = () => (
-  <div>
+  <div className="header">
     <h1>
       <Link to="/">Media Company</Link>
     </h1>

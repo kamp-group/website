@@ -5,6 +5,8 @@ import Header from '../components/Header'
 import Head from '../components/Head'
 import { graphql } from 'gatsby'
 
+import Layout from '../layouts'
+
 class BlogIndex extends React.Component {
   render() {
     const siteTitle = get(this, 'props.data.site.siteMetadata.title')
@@ -13,7 +15,7 @@ class BlogIndex extends React.Component {
     console.log(posts)
 
     return (
-      <div>
+      <Layout>
         <Head title={siteTitle} />
         <Header />
 
@@ -58,7 +60,7 @@ class BlogIndex extends React.Component {
             )
           })}
         </div>
-      </div>
+      </Layout>
     )
   }
 }
