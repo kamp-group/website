@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: 'Media Company',
-    author: 'Media Company',
+    title: 'KAMP',
+    author: 'KAMP MEDIA GROUP',
     description: '',
   },
   plugins: [
