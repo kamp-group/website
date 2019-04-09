@@ -1,7 +1,7 @@
 ---
 title: Headline Example
 date: '2018-09-13T17:37:26.785Z'
-layout: project
+layout: text-post
 draft: false
 renderPage: true
 description: Lorem ipsum dolor sit amet, ex rebum nihil consetetur pro, mucius definitionem id est, sit ferri propriae cu.

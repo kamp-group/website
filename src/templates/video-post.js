@@ -4,17 +4,17 @@ import get from 'lodash/get'
 import Head from '../components/Head'
 import Header from '../components/Header'
 
-class BlogPostTemplate extends React.Component {
+class VideoPostTemplate extends React.Component {
   render() {
     const post = this.props.data.markdownRemark
     const siteTitle = get(this.props, 'data.site.siteMetadata.title')
 
     return (
-      <div className="text-post">
+      <div className="video-post">
         <Head title={`${post.frontmatter.title} | ${siteTitle}`} />
         <Header />
         <div className="container">
-          <h1>{post.frontmatter.title}</h1>
+          <h1>VIDEO POST: {post.frontmatter.title}</h1>
           <div dangerouslySetInnerHTML={{ __html: post.html }} />
         </div>
       </div>
@@ -22,10 +22,10 @@ class BlogPostTemplate extends React.Component {
   }
 }
 
-export default BlogPostTemplate
+export default VideoPostTemplate
 
 export const pageQuery = graphql`
-  query BlogPostBySlug($slug: String!) {
+  query VideoPostBySlug($slug: String!) {
     site {
       siteMetadata {
         title

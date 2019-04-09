@@ -1,0 +1,15 @@
+.header {
+  h1 {
+    a {
+      color: $black;
+      text-transform: lowercase;
+      letter-spacing: 5px;
+    }
+  }
+}
+
+.posts-container {
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 0 20px;
+}
