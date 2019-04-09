@@ -19,7 +19,7 @@ class BlogIndex extends React.Component {
         <Head title={siteTitle} />
         <Header />
 
-        <div>
+        <div className="posts-container">
           {posts.map(({ node }, id) => {
             const title = get(node, 'frontmatter.title') || node.fields.slug
             return (

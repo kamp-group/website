@@ -3,7 +3,6 @@ module.exports = {
     title: 'Media Company',
     author: 'Media Company',
     description: '',
-    siteUrl: '',
   },
   plugins: [
     {
