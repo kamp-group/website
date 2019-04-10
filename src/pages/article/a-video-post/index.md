@@ -5,7 +5,6 @@ layout: video-post
 draft: false
 renderPage: true
 description: Lorem ipsum dolor sit amet, ex rebum nihil consetetur pro, mucius definitionem id est, sit ferri propriae cu.
-img: './james-traf-1152857-unsplash.jpg'
 ---
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/VZClzm3K__4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
