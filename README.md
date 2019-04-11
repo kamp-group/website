@@ -38,11 +38,22 @@ The site will be available at localhost:3000
 
 ## Creating a post
 
-You can create a new post by creating a folder within `/src/pages/article/`. The folder name will be the slug url of the post.
+You can create a new post by creating a folder within `/src/pages/article/`. The folder name will be the slug url of the post. For example, `/src/pages/article/slug-for-post-here`.
 
-Create an `index.md` file in the folder to start.
+Create an `index.md` file in the post folder to start. (i.e. `/src/pages/article/slug-for-post-here/index.md`)
 
-Posts need to have a layout type. Currently, the available post types are `text-post`, `image-post`, and `video-post`.
+Posts need to have a layout type in their frontmatter. Currently, the available post types are `text-post`, `image-post`, and `video-post`. An example of a post's front matter might be:
+
+```
+---
+title: Video Post Example
+date: '2018-09-12T17:37:26.785Z'
+layout: video-post
+draft: false
+renderPage: true
+description: Lorem ipsum dolor sit amet, ex rebum nihil consetetur pro, mucius definitionem id est, sit ferri propriae cu.
+---
+```
 
 ## Changing the style or layout of a post
 
@@ -52,4 +63,4 @@ The styles for each post type are in their own .scss file in `/src/styles`. To s
 
 ## Publishing your changes
 
-All code merged to master will publish on the live site, unless there is a build error. If there is a build error, the older, working version of the site will stay live.
+All code merged to master will be published on the live site, unless there is a build error. If there is a build error, the working version of the site will stay live.
