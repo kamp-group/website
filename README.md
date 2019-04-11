@@ -45,3 +45,7 @@ Create an `index.md` file in the folder to start.
 Posts need to have a layout type. Currently, the available post types are `text-post`, `image-post`, and `video-post`.
 
 ## Changing the style or layout of a post
+
+The layout for each post type is in the `/src/tempaltes/` folder. (`blog-post` corresponds to `text-post`)
+
+The styles for each post type are in their own .scss file in `/src/styles`. To style a specific post type, add classes (with `className` _because javascript_) to the template, then use the class in the .scss file.
