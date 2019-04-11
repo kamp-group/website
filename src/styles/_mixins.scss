@@ -1,0 +1,10 @@
+//--- Layout Mixins
+@mixin layout($width: 1200px) {
+  margin: 0 auto;
+  max-width: $width;
+}
+
+@mixin gutter($gutter: 20px) {
+  padding-left: $gutter;
+  padding-right: $gutter;
+}
