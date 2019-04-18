@@ -10,6 +10,91 @@
 
 .posts-container {
   margin: 0 auto;
-  max-width: 1200px;
+  max-width: 800px;
   padding: 0 20px;
+}
+
+.post {
+  border-bottom: 1px solid #000;
+  display: flex;
+  flex-direction: column;
+  padding: 30px 0;
+
+  @include respond(800px) {
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+
+    > div {
+      flex-basis: 50%;
+    }
+  }
+
+  &__text {
+    padding-left: 30px;
+  }
+
+  h3 {
+    margin-top: 10px;
+  }
+
+  p {
+    margin-top: 10px;
+  }
+}
+
+body {
+	word-wrap: break-word;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	-moz-font-feature-settings: "liga" on;
+	font-size:18px;
+}
+
+p {
+	display:block;
+	color:#000000;
+	font-size:1.0rem;
+	font-family:medium-content-serif-font, Georgia, Cambria, 'Times New Roman', Times, serif;
+	line-height:1.7rem;
+	background-color:#ffffff;
+	font-weight:400;
+	padding:0;
+	margin:0;
+	margin-bottom:25px;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: sans-serif;
+	font-weight: 700;
+  margin-bottom: 30px;
+}
+
+h1 {
+	font-size:2.5rem;
+}
+h2 {
+	font-size:2.2rem;
+}
+h3 {
+	font-size:1.9rem;
+}
+h4 {
+	font-size:1.6rem;
+}
+h5 {
+	font-size:1.3rem;
+}
+h6 {
+	font-size:1.0rem;
+}
+
+a {
+  color: #000;
+  font-weight: 600;
+  text-decoration: none;
+
+  &:visited {
+    color: #000;
+  }
 }

@@ -23,8 +23,8 @@ class BlogIndex extends React.Component {
           {posts.map(({ node }, id) => {
             const title = get(node, 'frontmatter.title') || node.fields.slug
             return (
-              <div key={id}>
-                <div>
+              <div className="post" key={id}>
+                <div className="post__image">
                   <img
                     src={
                       node.frontmatter.img
@@ -34,7 +34,7 @@ class BlogIndex extends React.Component {
                   />
                 </div>
 
-                <div>
+                <div className="post__text">
                   <h3>{title}</h3>
                   <div>
                     <p>{node.frontmatter.description}</p>
