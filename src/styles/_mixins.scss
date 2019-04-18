@@ -8,3 +8,16 @@
   padding-left: $gutter;
   padding-right: $gutter;
 }
+
+//--- Media Query Mixins ---//
+@mixin respond($breakpoint: 768px) {
+  @media (min-width: $breakpoint) {
+    @content;
+  }
+}
+
+@mixin respond-below($breakpoint: 768px) {
+  @media (max-width: $breakpoint) {
+    @content;
+  }
+}
