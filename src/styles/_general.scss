@@ -34,7 +34,7 @@
     padding-left: 30px;
   }
 
-  h3 {
+  h1, h2, h3 {
     margin-top: 10px;
   }
 
@@ -97,4 +97,13 @@ a {
   &:visited {
     color: #000;
   }
+}
+
+ul, ol {
+  margin-top: 10px;
+}
+
+li {
+  margin-left: 20px;
+  margin-top: 10px;
 }
