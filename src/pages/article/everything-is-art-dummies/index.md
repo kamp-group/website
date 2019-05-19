@@ -1,6 +1,6 @@
 ---
 title: Why you shouldn't discuss whether something is art or not
-date: '2019-05-29T14:37:26.785Z'
+date: '2019-04-29T14:37:26.785Z'
 layout: text-post
 draft: false
 renderPage: true
